@@ -15,7 +15,7 @@ const pessoa = {
   idade: "20",
 };
 for (let chave in pessoa) {
-  console.log(chave);
+  console.log(chave + pessoa[chave]);
 }
 const cores = ["Vermelho", "Branco", "Azul", "Verde"];
 for (let indice in cores) {
