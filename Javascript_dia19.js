@@ -9,14 +9,17 @@
 const notas = [100, 90, 100, 75];
 console.log(mediaNotas(notas));
 function mediaNotas(notas) {
-  let soma = 0;
-  for (let nota of notas) {
-    soma += nota;
-  }
-  const media = soma / notas.length;
+  const media = calcularMedia(notas);
   if (media < 59) return "Nota E";
   if (media < 69) return "Nota D";
   if (media < 79) return "Nota C";
   if (media < 89) return "Nota B";
   return "Nota A";
+}
+function calcularMedia(notas) {
+  let soma = 0;
+  for (let nota of notas) {
+    soma += nota;
+  }
+  return soma / notas.length;
 }
