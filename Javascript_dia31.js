@@ -1,4 +1,5 @@
 // Projeto código nosso de cada dia (dia 31)
+// Montador de postagem de blog
 function montadorPostagem(titulo, mensagem, autor) {
   (this.titulo = titulo),
     (this.mensagem = mensagem),
